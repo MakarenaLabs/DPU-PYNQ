@@ -5,9 +5,9 @@
 *.hex
 *.dis
 *.exe
-*.bit
-*.hwh
-*.xclbin
+#*.bit
+#*.hwh
+#*.xclbin
 
 # Packages 
 ############
