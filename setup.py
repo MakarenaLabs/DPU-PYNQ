@@ -61,8 +61,8 @@ class BuildExtension(build_ext):
         build_ext.run(self)
         overlay_path = os.path.join(self.build_lib, module_name)
         resolve_overlay_d(overlay_path)
-        test_model_path = os.path.join(self.build_lib, module_name, 'tests', 'models')
-        resolve_overlay_d(test_model_path)
+        #test_model_path = os.path.join(self.build_lib, module_name, 'tests', 'models')
+        #resolve_overlay_d(test_model_path)
 
 with open("README.md", encoding='utf-8') as fh:
     readme_lines = fh.readlines()[2:7]
