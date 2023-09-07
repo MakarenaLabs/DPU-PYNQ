@@ -60,10 +60,12 @@ folder.
 /usr/bin/pip3.10 install IPython # workaround for venv pip
 git clone https://github.com/MakarenaLabs/DPU-PYNQ.git
 cd DPU-PYNQ
-pip3 install -e .
+pip3 install -e . --no-build-isolation
 
 # copy the notebooks
 cp -r pynq_dpu/kd240_notebooks $PYNQ_JUPYTER_NOTEBOOKS
+cp pynq_dpu/kd240_notebooks/dpu.* /usr/lib
+
 ```
 
 ### 1.b [Optional] Install from ssh/serial
