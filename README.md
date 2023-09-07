@@ -31,6 +31,7 @@ DPU-PYNQ is available for a wide range of boards and devices, some of which may 
 | ZCU1285         | B4096  | 2  |   |
 | ZCU216          | B4096  | 2  | Yes  |
 | ZUBoard-1CG     | B800   | 1  |   |
+| KD240 SOM       | B1600  | 1  |   |
 
 DPU overlays for most boards have been built using the B4096 architecture with 1 or 2 cores, compatible with the KV260/ZCU102/ZCU104 models in the Vitis AI Model Zoo. For a selection of smaller boards, like the Ultra96 and ZUBoard-1CG custom arch.json files are provided that will allow you to compile .xmodel files for those boards.
 
@@ -53,6 +54,16 @@ pynq get-notebooks pynq-dpu -p .
 
 This will make sure the desired notebooks show up in your jupyter notebook 
 folder.
+
+### 1. Install on KD240
+```shell
+git clone https://github.com/MakarenaLabs/DPU-PYNQ.git
+cd DPU-PYNQ
+pip install -e .
+
+# copy the notebooks
+cp -r pynq_dpu/kd240_notebooks $PYNQ_JUPYTER_NOTEBOOKS
+```
 
 ### 1.b [Optional] Install from ssh/serial
 

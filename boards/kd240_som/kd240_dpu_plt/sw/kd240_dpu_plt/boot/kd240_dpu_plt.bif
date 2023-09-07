@@ -1,0 +1,7 @@
+/*kd240_dpu_plt*/
+the_ROM_image:
+{
+  [bootloader, destination_cpu=a53-0]<kd240_dpu_plt/boot/fsbl.elf>
+  [pmufw_image]<kd240_dpu_plt/boot/pmufw.elf>
+  [destination_device=pl] <bitstream>
+}
