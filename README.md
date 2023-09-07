@@ -57,9 +57,10 @@ folder.
 
 ### 1. Install on KD240
 ```shell
+/usr/bin/pip3.10 install IPython # workaround for venv pip
 git clone https://github.com/MakarenaLabs/DPU-PYNQ.git
 cd DPU-PYNQ
-pip install -e .
+pip3 install -e .
 
 # copy the notebooks
 cp -r pynq_dpu/kd240_notebooks $PYNQ_JUPYTER_NOTEBOOKS

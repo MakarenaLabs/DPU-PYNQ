@@ -68,8 +68,8 @@ with open("README.md", encoding='utf-8') as fh:
     readme_lines = fh.readlines()[2:7]
 long_description = (''.join(readme_lines))
 
-#extend_package(os.path.join(module_name, 'notebooks'), data_files)
-#extend_package(os.path.join(module_name, 'tests'), data_files)
+extend_package(os.path.join(module_name, 'notebooks'), data_files)
+extend_package(os.path.join(module_name, 'tests'), data_files)
 extend_package(module_name, data_files)
 
 setup(
