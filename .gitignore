@@ -27,7 +27,7 @@ thumbs.db
 
 # Build directory
 ######################
-build/
+#build/
 sdcard/
 
 # Test failure outputs
