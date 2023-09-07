@@ -63,7 +63,7 @@ cd DPU-PYNQ
 pip3 install -e . --no-build-isolation
 
 # copy the notebooks
-cp -r pynq_dpu/kd240_notebooks $PYNQ_JUPYTER_NOTEBOOKS
+cp -r pynq_dpu/kd240_notebooks /home/xilinx/jupyter_notebooks/
 cp pynq_dpu/kd240_notebooks/dpu.* /usr/lib
 
 ```
